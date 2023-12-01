@@ -1,3 +1,45 @@
+##How to install 
+
+##1. Get repository from: https://github.com/pult3r/movies :
+
+$ gh repo clone pult3r/movies
+or
+$ git clone https://github.com/pult3r/movies.git
+
+##2. Go to project directory :
+$ cd movies
+
+##3. Install composer :
+$ composer install
+
+##4. Create .env file by :
+$ cp .env.example .env
+
+##5. Open .env file and set you database acceess settings :
+DB_DATABASE=movies
+DB_USERNAME=your_mysql_login
+DB_PASSWORD=your_mysql_password
+
+##6. open mysql console and create Movies database : 
+CREATE DATABASE movies DEFAULT CHARACTER SET = 'utf8mb4';
+
+##7. Add aplication key :
+$ php artisan key:generate
+
+##8. Make database migration :
+$ php artisan migrate
+
+##7. Add movies from file to database :
+$ php artisan db:seed
+
+##8. Execute server :
+$ php artisan serve
+
+##Important : 
+If you have Laravel problem 'Permission denied' - set corect permissions!
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
