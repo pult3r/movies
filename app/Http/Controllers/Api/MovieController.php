@@ -109,7 +109,7 @@ class MovieController extends BaseController
 
             return $this->sendResponse(
                 'success',
-                'W Letter Movie List',
+                'Longer titles movies',
                 $movieList
             );
         } catch (Exception $e) {
