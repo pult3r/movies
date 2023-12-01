@@ -38,4 +38,8 @@ $ php artisan serve
 ## Important : <br/>
 If you have Laravel problem 'Permission denied' - set corect permissions!
 
+## 9. How to execute Unit and Feature tests : <br/>
+$ vendor/bin/phpunit
+
+
 
