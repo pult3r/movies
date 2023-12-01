@@ -29,7 +29,7 @@ $ php artisan key:generate
 ## 8. Make database migration :<br/>
 $ php artisan migrate
 
-## 7. Add movies from file to database :<br/>
+## 7. Add movies from file /storage/dbdata/movies.json to database :<br/>
 $ php artisan db:seed
 
 ## 8. Execute server :<br/>
